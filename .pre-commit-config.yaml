@@ -1,6 +1,5 @@
 repos:
-  - repo: git://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
+  - repo: https://github.com/signavio/plantuml-converter
+    rev: pre-commit
     hooks:
-      - id: check-yaml
-      - id: end-of-file-fixer
+      - id: plantuml_coverter

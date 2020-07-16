@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-set +x
+set -x
 
 for md_file in "$@"; do
-
   plantuml-converter -p "$md_file"
   return_val="$?"
 

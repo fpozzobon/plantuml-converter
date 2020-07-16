@@ -21,7 +21,7 @@ var rootCmd = &cobra.Command{
 		plantUML := converter.PlantUml{ScanDirectory: ScanDirectory, Pattern: FilePattern}
 		switch plantUML.Convert() {
 		case converter.StatusUpdated:
-			os.Exit(3)
+			os.Exit(0)
 		case converter.StatusUnchanged:
 			os.Exit(0)
 		default:
